@@ -11,5 +11,8 @@
   <% end %>
 </ul>
 
+<h2>Add a new review</h2>
+
+<%= render "form", restaurant: @restaurant , review: @review %>
+
 <%= link_to 'Back', restaurants_path %>
-<%= link_to 'Leave a review', new_restaurant_review_path(@restaurant) %>
